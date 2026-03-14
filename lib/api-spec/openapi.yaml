@@ -1,0 +1,970 @@
+openapi: 3.1.0
+info:
+  title: Api
+  version: 0.2.0
+  description: Dhikr & Dua App API
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: Auth
+    description: Browser and mobile authentication endpoints.
+  - name: progress
+    description: User progress and dhikr tracking
+  - name: quiz
+    description: Quiz questions and answers
+  - name: duas
+    description: Dua lists by category
+  - name: prayers
+    description: Prayer tracking
+  - name: quran
+    description: Quran reading and memorisation tracking
+  - name: stories
+    description: Islamic stories and hadith
+paths:
+  /auth/user:
+    get:
+      tags: [Auth]
+      operationId: getCurrentAuthUser
+      summary: Get the currently authenticated user
+      parameters:
+        - $ref: '#/components/parameters/AuthorizationSessionHeader'
+        - $ref: '#/components/parameters/SessionCookie'
+      responses:
+        '200':
+          description: Auth status resolved successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AuthUserEnvelope'
+  /login:
+    get:
+      tags: [Auth]
+      operationId: beginBrowserLogin
+      summary: Start the browser OIDC login flow
+      parameters:
+        - name: returnTo
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        '302':
+          description: Redirect to the OIDC authorization endpoint.
+  /callback:
+    get:
+      tags: [Auth]
+      operationId: handleBrowserLoginCallback
+      summary: Complete the browser OIDC login flow
+      parameters:
+        - name: code
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: state
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: iss
+          in: query
+          required: false
+          schema:
+            type: string
+            format: uri
+      responses:
+        '302':
+          description: Redirect to the returnTo path on success or /api/login on failure.
+  /logout:
+    get:
+      tags: [Auth]
+      operationId: logoutBrowserSession
+      summary: Clear the session and begin OIDC logout
+      parameters:
+        - $ref: '#/components/parameters/AuthorizationSessionHeader'
+        - $ref: '#/components/parameters/SessionCookie'
+      responses:
+        '302':
+          description: Redirect to the OIDC provider logout URL.
+  /mobile-auth/token-exchange:
+    post:
+      tags: [Auth]
+      operationId: exchangeMobileAuthorizationCode
+      summary: Exchange a mobile OIDC code for a session token
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MobileTokenExchangeRequest'
+      responses:
+        '200':
+          description: Session created successfully.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MobileTokenExchangeSuccess'
+        '400':
+          description: Missing or invalid required fields.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorEnvelope'
+        '401':
+          description: Token did not contain usable claims.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorEnvelope'
+        '500':
+          description: Token exchange failed.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorEnvelope'
+  /mobile-auth/logout:
+    post:
+      tags: [Auth]
+      operationId: logoutMobileSession
+      summary: Delete a mobile session token
+      parameters:
+        - $ref: '#/components/parameters/AuthorizationSessionHeader'
+      responses:
+        '200':
+          description: Logout processed.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LogoutSuccess'
+
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+
+  /progress:
+    get:
+      operationId: getProgress
+      tags: [progress]
+      summary: Get user progress
+      parameters:
+        - name: sessionId
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: User progress
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UserProgress"
+    post:
+      operationId: saveProgress
+      tags: [progress]
+      summary: Save user progress
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SaveProgressRequest"
+      responses:
+        "200":
+          description: Progress saved
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UserProgress"
+
+  /dhikr:
+    get:
+      operationId: getDhikrList
+      tags: [progress]
+      summary: Get dhikr list
+      responses:
+        "200":
+          description: List of dhikr
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Dhikr"
+
+  /duas/categories:
+    get:
+      operationId: getDuaCategories
+      tags: [duas]
+      summary: Get all dua categories
+      responses:
+        "200":
+          description: List of dua categories
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/DuaCategory"
+
+  /duas:
+    get:
+      operationId: getDuas
+      tags: [duas]
+      summary: Get duas in a category
+      parameters:
+        - name: categoryId
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: List of duas
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Dua"
+
+  /prayers:
+    get:
+      operationId: getPrayerLog
+      tags: [prayers]
+      summary: Get prayer log for a date
+      parameters:
+        - name: sessionId
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: date
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Prayer log
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PrayerLog"
+    post:
+      operationId: markPrayer
+      tags: [prayers]
+      summary: Mark a prayer as completed or missed
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MarkPrayerRequest"
+      responses:
+        "200":
+          description: Prayer marked
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PrayerLog"
+
+  /prayers/stats:
+    get:
+      operationId: getPrayerStats
+      tags: [prayers]
+      summary: Get prayer statistics for a period
+      parameters:
+        - name: sessionId
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: period
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [week, month]
+      responses:
+        "200":
+          description: Prayer statistics
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PrayerStats"
+
+  /quiz/unlocked:
+    get:
+      operationId: getUnlockedQuestions
+      tags: [quiz]
+      summary: Get unlocked quiz questions
+      parameters:
+        - name: sessionId
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Unlocked quiz questions
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/QuizQuestion"
+
+  /quiz/answer:
+    post:
+      operationId: submitAnswer
+      tags: [quiz]
+      summary: Submit a quiz answer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SubmitAnswerRequest"
+      responses:
+        "200":
+          description: Answer result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AnswerResult"
+
+  /quran/log:
+    get:
+      operationId: getQuranLog
+      tags: [quran]
+      summary: Get Quran reading log
+      parameters:
+        - name: sessionId
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Quran reading log
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/QuranLog"
+    post:
+      operationId: saveQuranLog
+      tags: [quran]
+      summary: Save a Quran reading session
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SaveQuranLogRequest"
+      responses:
+        "200":
+          description: Quran log saved
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/QuranLog"
+
+  /quran/memorisation:
+    get:
+      operationId: getMemorisation
+      tags: [quran]
+      summary: Get memorisation log
+      parameters:
+        - name: sessionId
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Memorisation log
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MemorisationLog"
+    post:
+      operationId: saveMemorisation
+      tags: [quran]
+      summary: Save memorisation progress
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SaveMemorisationRequest"
+      responses:
+        "200":
+          description: Memorisation saved
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MemorisationLog"
+
+  /stories/categories:
+    get:
+      operationId: getStoryCategories
+      tags: [stories]
+      summary: Get story categories
+      responses:
+        "200":
+          description: List of story categories
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/StoryCategory"
+
+  /stories:
+    get:
+      operationId: getStories
+      tags: [stories]
+      summary: Get stories in a category
+      parameters:
+        - name: categoryId
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: List of stories
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Story"
+
+  /stories/{id}:
+    get:
+      operationId: getStory
+      tags: [stories]
+      summary: Get a single story
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Story detail
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Story"
+
+components:
+  parameters:
+    AuthorizationSessionHeader:
+      name: Authorization
+      in: header
+      required: false
+      description: Opaque session token — `Bearer <sid>`.
+      schema:
+        type: string
+    SessionCookie:
+      name: sid
+      in: cookie
+      required: false
+      description: Browser session cookie.
+      schema:
+        type: string
+  schemas:
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required: [status]
+
+    Dhikr:
+      type: object
+      properties:
+        id:
+          type: string
+        arabic:
+          type: string
+        transliteration:
+          type: string
+        translation:
+          type: string
+        meaning:
+          type: string
+        virtue:
+          type: string
+        reward:
+          type: string
+        level:
+          type: integer
+          description: "1=beginner, 2=intermediate, 3=advanced"
+        targetCount:
+          type: integer
+        color:
+          type: string
+        category:
+          type: string
+      required: [id, arabic, transliteration, translation, virtue, targetCount, color, level, category]
+
+    UserProgress:
+      type: object
+      properties:
+        sessionId:
+          type: string
+        totalTasbeehat:
+          type: integer
+        dhikrCounts:
+          type: object
+          additionalProperties:
+            type: integer
+        unlockedQuestionIds:
+          type: array
+          items:
+            type: string
+        completedMilestones:
+          type: array
+          items:
+            type: string
+        streak:
+          type: integer
+        lastActive:
+          type: string
+      required: [sessionId, totalTasbeehat, dhikrCounts, unlockedQuestionIds, completedMilestones, streak, lastActive]
+
+    SaveProgressRequest:
+      type: object
+      properties:
+        sessionId:
+          type: string
+        dhikrId:
+          type: string
+        count:
+          type: integer
+      required: [sessionId, dhikrId, count]
+
+    DuaCategory:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        icon:
+          type: string
+        description:
+          type: string
+        timeOfDay:
+          type: string
+        color:
+          type: string
+        duaCount:
+          type: integer
+      required: [id, name, icon, description, color, duaCount]
+
+    Dua:
+      type: object
+      properties:
+        id:
+          type: string
+        categoryId:
+          type: string
+        arabic:
+          type: string
+        transliteration:
+          type: string
+        translation:
+          type: string
+        reference:
+          type: string
+        order:
+          type: integer
+      required: [id, categoryId, arabic, transliteration, translation, reference, order]
+
+    PrayerLog:
+      type: object
+      properties:
+        sessionId:
+          type: string
+        date:
+          type: string
+        prayers:
+          type: object
+          additionalProperties:
+            $ref: "#/components/schemas/PrayerEntry"
+        streak:
+          type: integer
+        totalCompleted:
+          type: integer
+      required: [sessionId, date, prayers, streak, totalCompleted]
+
+    PrayerEntry:
+      type: object
+      properties:
+        status:
+          type: string
+          enum: [completed, missed, pending, late]
+        loggedAt:
+          type: string
+        quality:
+          type: string
+          enum: [excellent, good, distracted, rushed]
+        didDhikr:
+          type: boolean
+        notes:
+          type: string
+      required: [status]
+
+    MarkPrayerRequest:
+      type: object
+      properties:
+        sessionId:
+          type: string
+        prayerName:
+          type: string
+        status:
+          type: string
+          enum: [completed, missed, late]
+        quality:
+          type: string
+          enum: [excellent, good, distracted, rushed]
+        didDhikr:
+          type: boolean
+        notes:
+          type: string
+        date:
+          type: string
+      required: [sessionId, prayerName, status]
+
+    PrayerStats:
+      type: object
+      properties:
+        sessionId:
+          type: string
+        period:
+          type: string
+        totalPrayers:
+          type: integer
+        completedPrayers:
+          type: integer
+        missedPrayers:
+          type: integer
+        latePrayers:
+          type: integer
+        streak:
+          type: integer
+        bestStreak:
+          type: integer
+        dhikrAfterPrayer:
+          type: integer
+        dailyBreakdown:
+          type: array
+          items:
+            type: object
+            properties:
+              date:
+                type: string
+              completed:
+                type: integer
+              total:
+                type: integer
+            required: [date, completed, total]
+      required: [sessionId, period, totalPrayers, completedPrayers, missedPrayers, latePrayers, streak, bestStreak, dhikrAfterPrayer, dailyBreakdown]
+
+    QuizQuestion:
+      type: object
+      properties:
+        id:
+          type: string
+        question:
+          type: string
+        arabicVerse:
+          type: string
+        options:
+          type: array
+          items:
+            type: string
+        correctIndex:
+          type: integer
+        explanation:
+          type: string
+        category:
+          type: string
+        unlockedAt:
+          type: integer
+      required: [id, question, options, correctIndex, explanation, category, unlockedAt]
+
+    SubmitAnswerRequest:
+      type: object
+      properties:
+        sessionId:
+          type: string
+        questionId:
+          type: string
+        selectedIndex:
+          type: integer
+      required: [sessionId, questionId, selectedIndex]
+
+    AnswerResult:
+      type: object
+      properties:
+        correct:
+          type: boolean
+        correctIndex:
+          type: integer
+        explanation:
+          type: string
+        pointsEarned:
+          type: integer
+      required: [correct, correctIndex, explanation, pointsEarned]
+
+    QuranLog:
+      type: object
+      properties:
+        sessionId:
+          type: string
+        entries:
+          type: array
+          items:
+            $ref: "#/components/schemas/QuranEntry"
+        totalPages:
+          type: integer
+        totalJuz:
+          type: number
+        streak:
+          type: integer
+        lastRead:
+          type: string
+      required: [sessionId, entries, totalPages, totalJuz, streak]
+
+    QuranEntry:
+      type: object
+      properties:
+        id:
+          type: string
+        date:
+          type: string
+        surahFrom:
+          type: integer
+        ayahFrom:
+          type: integer
+        surahTo:
+          type: integer
+        ayahTo:
+          type: integer
+        pages:
+          type: integer
+        duration:
+          type: integer
+        notes:
+          type: string
+      required: [id, date, surahFrom, ayahFrom, surahTo, ayahTo, pages]
+
+    SaveQuranLogRequest:
+      type: object
+      properties:
+        sessionId:
+          type: string
+        surahFrom:
+          type: integer
+        ayahFrom:
+          type: integer
+        surahTo:
+          type: integer
+        ayahTo:
+          type: integer
+        pages:
+          type: integer
+        duration:
+          type: integer
+        notes:
+          type: string
+      required: [sessionId, surahFrom, ayahFrom, surahTo, ayahTo, pages]
+
+    MemorisationLog:
+      type: object
+      properties:
+        sessionId:
+          type: string
+        memorisedAyahs:
+          type: array
+          items:
+            $ref: "#/components/schemas/MemorisedAyah"
+        totalAyahs:
+          type: integer
+        currentSurah:
+          type: integer
+        currentAyah:
+          type: integer
+        lastReviewed:
+          type: string
+      required: [sessionId, memorisedAyahs, totalAyahs]
+
+    MemorisedAyah:
+      type: object
+      properties:
+        surah:
+          type: integer
+        ayah:
+          type: integer
+        surahName:
+          type: string
+        strength:
+          type: string
+          enum: [new, learning, review, strong]
+        lastReviewed:
+          type: string
+      required: [surah, ayah, surahName, strength]
+
+    SaveMemorisationRequest:
+      type: object
+      properties:
+        sessionId:
+          type: string
+        surah:
+          type: integer
+        ayah:
+          type: integer
+        surahName:
+          type: string
+        strength:
+          type: string
+          enum: [new, learning, review, strong]
+      required: [sessionId, surah, ayah, surahName, strength]
+
+    StoryCategory:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        icon:
+          type: string
+        description:
+          type: string
+        storyCount:
+          type: integer
+        color:
+          type: string
+      required: [id, name, icon, description, storyCount, color]
+
+    Story:
+      type: object
+      properties:
+        id:
+          type: string
+        categoryId:
+          type: string
+        title:
+          type: string
+        subtitle:
+          type: string
+        content:
+          type: array
+          items:
+            $ref: "#/components/schemas/StorySection"
+        arabicTitle:
+          type: string
+        readTime:
+          type: integer
+        tags:
+          type: array
+          items:
+            type: string
+      required: [id, categoryId, title, content, readTime]
+
+    StorySection:
+      type: object
+      properties:
+        type:
+          type: string
+          enum: [paragraph, hadith, verse, highlight]
+        text:
+          type: string
+        arabic:
+          type: string
+        reference:
+          type: string
+      required: [type, text]
+
+    AuthUser:
+      type: object
+      required: [id, email, firstName, lastName, profileImageUrl]
+      properties:
+        id:
+          type: string
+        email:
+          type: [string, 'null']
+          format: email
+        firstName:
+          type: [string, 'null']
+        lastName:
+          type: [string, 'null']
+        profileImageUrl:
+          type: [string, 'null']
+    AuthUserEnvelope:
+      type: object
+      required: [user]
+      properties:
+        user:
+          oneOf:
+            - $ref: '#/components/schemas/AuthUser'
+            - type: 'null'
+    MobileTokenExchangeRequest:
+      type: object
+      required: [code, code_verifier, redirect_uri, state]
+      properties:
+        code:
+          type: string
+          minLength: 1
+        code_verifier:
+          type: string
+          minLength: 1
+        redirect_uri:
+          type: string
+          minLength: 1
+          format: uri
+        state:
+          type: string
+          minLength: 1
+        nonce:
+          type: string
+          minLength: 1
+    MobileTokenExchangeSuccess:
+      type: object
+      required: [token]
+      properties:
+        token:
+          type: string
+    LogoutSuccess:
+      type: object
+      required: [success]
+      properties:
+        success:
+          type: boolean
+          const: true
+    ErrorEnvelope:
+      type: object
+      required: [error]
+      properties:
+        error:
+          type: string

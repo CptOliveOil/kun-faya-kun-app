@@ -1,0 +1,737 @@
+export const islamicVideos = [
+  // REMINDERS (10)
+  {
+    title: "Stop Worrying, Trust Allah",
+    speaker: "Mufti Menk",
+    videoId: "rLTv1lUAYxA",
+    category: "Reminders",
+    embedUrl: "https://www.youtube.com/embed/rLTv1lUAYxA",
+    thumbnailUrl: "https://img.youtube.com/vi/rLTv1lUAYxA/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=rLTv1lUAYxA"
+  },
+  {
+    title: "Make The Most of This Month",
+    speaker: "Mufti Menk",
+    videoId: "ufffdfz-Wqc",
+    category: "Reminders",
+    embedUrl: "https://www.youtube.com/embed/ufffdfz-Wqc",
+    thumbnailUrl: "https://img.youtube.com/vi/ufffdfz-Wqc/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=ufffdfz-Wqc"
+  },
+  {
+    title: "The Most Important Reminder You'll Hear Today",
+    speaker: "Omar Suleiman",
+    videoId: "yr7jx7apyP0",
+    category: "Reminders",
+    embedUrl: "https://www.youtube.com/embed/yr7jx7apyP0",
+    thumbnailUrl: "https://img.youtube.com/vi/yr7jx7apyP0/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=yr7jx7apyP0"
+  },
+  {
+    title: "Stop Pleasing Everyone",
+    speaker: "Mufti Menk",
+    videoId: "jVRRnupNJUI",
+    category: "Reminders",
+    embedUrl: "https://www.youtube.com/embed/jVRRnupNJUI",
+    thumbnailUrl: "https://img.youtube.com/vi/jVRRnupNJUI/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=jVRRnupNJUI"
+  },
+  {
+    title: "Live As If It Is Your Last Day",
+    speaker: "Mufti Menk",
+    videoId: "S7n91tiFgwE",
+    category: "Reminders",
+    embedUrl: "https://www.youtube.com/embed/S7n91tiFgwE",
+    thumbnailUrl: "https://img.youtube.com/vi/S7n91tiFgwE/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=S7n91tiFgwE"
+  },
+  {
+    title: "This Reminder Is For Me, I Need It",
+    speaker: "Mufti Menk",
+    videoId: "GKaCo-nJgSc",
+    category: "Reminders",
+    embedUrl: "https://www.youtube.com/embed/GKaCo-nJgSc",
+    thumbnailUrl: "https://img.youtube.com/vi/GKaCo-nJgSc/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=GKaCo-nJgSc"
+  },
+  {
+    title: "Message to the Muslim Youth",
+    speaker: "Mufti Menk",
+    videoId: "y37088rKUkg",
+    category: "Reminders",
+    embedUrl: "https://www.youtube.com/embed/y37088rKUkg",
+    thumbnailUrl: "https://img.youtube.com/vi/y37088rKUkg/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=y37088rKUkg"
+  },
+  {
+    title: "Stop Complaining, Start Living",
+    speaker: "Mufti Menk",
+    videoId: "i8Vpn_L9X0Q",
+    category: "Reminders",
+    embedUrl: "https://www.youtube.com/embed/i8Vpn_L9X0Q",
+    thumbnailUrl: "https://img.youtube.com/vi/i8Vpn_L9X0Q/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=i8Vpn_L9X0Q"
+  },
+  {
+    title: "Reflection & Self Improvement",
+    speaker: "Mufti Menk",
+    videoId: "NBPBSLr5j5E",
+    category: "Reminders",
+    embedUrl: "https://www.youtube.com/embed/NBPBSLr5j5E",
+    thumbnailUrl: "https://img.youtube.com/vi/NBPBSLr5j5E/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=NBPBSLr5j5E"
+  },
+  {
+    title: "Leave It In The Hands Of Allah",
+    speaker: "Mufti Menk",
+    videoId: "StBHWsu2wXM",
+    category: "Reminders",
+    embedUrl: "https://www.youtube.com/embed/StBHWsu2wXM",
+    thumbnailUrl: "https://img.youtube.com/vi/StBHWsu2wXM/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=StBHWsu2wXM"
+  },
+
+  // HADITH (10)
+  {
+    title: "The Scariest Hadith We Ignore",
+    speaker: "Omar Suleiman",
+    videoId: "p8-p_mPc8Cs",
+    category: "Hadith",
+    embedUrl: "https://www.youtube.com/embed/p8-p_mPc8Cs",
+    thumbnailUrl: "https://img.youtube.com/vi/p8-p_mPc8Cs/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=p8-p_mPc8Cs"
+  },
+  {
+    title: "The Hadith That Changes Everything About Happiness",
+    speaker: "Omar Suleiman",
+    videoId: "Xp-u3Te-p7I",
+    category: "Hadith",
+    embedUrl: "https://www.youtube.com/embed/Xp-u3Te-p7I",
+    thumbnailUrl: "https://img.youtube.com/vi/Xp-u3Te-p7I/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=Xp-u3Te-p7I"
+  },
+  {
+    title: "Avoiding That Which Doesn't Concern You",
+    speaker: "Omar Suleiman",
+    videoId: "eueTFX3CSGY",
+    category: "Hadith",
+    embedUrl: "https://www.youtube.com/embed/eueTFX3CSGY",
+    thumbnailUrl: "https://img.youtube.com/vi/eueTFX3CSGY/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=eueTFX3CSGY"
+  },
+  {
+    title: "Two Things Allah Keeps Hidden From Us",
+    speaker: "Omar Suleiman",
+    videoId: "pXLKda9rNf8",
+    category: "Hadith",
+    embedUrl: "https://www.youtube.com/embed/pXLKda9rNf8",
+    thumbnailUrl: "https://img.youtube.com/vi/pXLKda9rNf8/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=pXLKda9rNf8"
+  },
+  {
+    title: "Do Not Wish to Meet Your Enemy in Battle",
+    speaker: "Omar Suleiman",
+    videoId: "XT6KRsSkJjs",
+    category: "Hadith",
+    embedUrl: "https://www.youtube.com/embed/XT6KRsSkJjs",
+    thumbnailUrl: "https://img.youtube.com/vi/XT6KRsSkJjs/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=XT6KRsSkJjs"
+  },
+  {
+    title: "Sincere Advice to an Unwilling Recipient",
+    speaker: "Omar Suleiman",
+    videoId: "LX_-rCCDJLs",
+    category: "Hadith",
+    embedUrl: "https://www.youtube.com/embed/LX_-rCCDJLs",
+    thumbnailUrl: "https://img.youtube.com/vi/LX_-rCCDJLs/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=LX_-rCCDJLs"
+  },
+  {
+    title: "Two Blessings that are Rarely Combined",
+    speaker: "Omar Suleiman",
+    videoId: "pQIv8FRGOik",
+    category: "Hadith",
+    embedUrl: "https://www.youtube.com/embed/pQIv8FRGOik",
+    thumbnailUrl: "https://img.youtube.com/vi/pQIv8FRGOik/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=pQIv8FRGOik"
+  },
+  {
+    title: "To Be Spared and Grateful Is More Beloved",
+    speaker: "Omar Suleiman",
+    videoId: "x3RdxVejdoI",
+    category: "Hadith",
+    embedUrl: "https://www.youtube.com/embed/x3RdxVejdoI",
+    thumbnailUrl: "https://img.youtube.com/vi/x3RdxVejdoI/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=x3RdxVejdoI"
+  },
+  {
+    title: "The Du'a Abu Bakr Asked For",
+    speaker: "Omar Suleiman",
+    videoId: "aGC7rKiRl04",
+    category: "Hadith",
+    embedUrl: "https://www.youtube.com/embed/aGC7rKiRl04",
+    thumbnailUrl: "https://img.youtube.com/vi/aGC7rKiRl04/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=aGC7rKiRl04"
+  },
+  {
+    title: "Did the Prophet ﷺ Tell Us About This War?",
+    speaker: "Omar Suleiman",
+    videoId: "HxRd7CKmD6Q",
+    category: "Hadith",
+    embedUrl: "https://www.youtube.com/embed/HxRd7CKmD6Q",
+    thumbnailUrl: "https://img.youtube.com/vi/HxRd7CKmD6Q/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=HxRd7CKmD6Q"
+  },
+
+  // PROPHET STORIES (10)
+  {
+    title: "Stories Of The Prophets 01: Introduction",
+    speaker: "Mufti Menk",
+    videoId: "IQjzErJlpJ0",
+    category: "Prophet Stories",
+    embedUrl: "https://www.youtube.com/embed/IQjzErJlpJ0",
+    thumbnailUrl: "https://img.youtube.com/vi/IQjzErJlpJ0/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=IQjzErJlpJ0"
+  },
+  {
+    title: "Stories Of The Prophets 02: Creation of Aadam",
+    speaker: "Mufti Menk",
+    videoId: "w6bX6GKqVa4",
+    category: "Prophet Stories",
+    embedUrl: "https://www.youtube.com/embed/w6bX6GKqVa4",
+    thumbnailUrl: "https://img.youtube.com/vi/w6bX6GKqVa4/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=w6bX6GKqVa4"
+  },
+  {
+    title: "Stories Of The Prophets 03: Aadam on Earth Part 1",
+    speaker: "Mufti Menk",
+    videoId: "J9IDLOza_KM",
+    category: "Prophet Stories",
+    embedUrl: "https://www.youtube.com/embed/J9IDLOza_KM",
+    thumbnailUrl: "https://img.youtube.com/vi/J9IDLOza_KM/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=J9IDLOza_KM"
+  },
+  {
+    title: "Stories Of The Prophets 04: Aadam on Earth Part 2",
+    speaker: "Mufti Menk",
+    videoId: "WNPjOOwXOIk",
+    category: "Prophet Stories",
+    embedUrl: "https://www.youtube.com/embed/WNPjOOwXOIk",
+    thumbnailUrl: "https://img.youtube.com/vi/WNPjOOwXOIk/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=WNPjOOwXOIk"
+  },
+  {
+    title: "Stories Of The Prophets 05: Sheeth",
+    speaker: "Mufti Menk",
+    videoId: "T30tVG3uKZM",
+    category: "Prophet Stories",
+    embedUrl: "https://www.youtube.com/embed/T30tVG3uKZM",
+    thumbnailUrl: "https://img.youtube.com/vi/T30tVG3uKZM/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=T30tVG3uKZM"
+  },
+  {
+    title: "Stories Of The Prophets 06: Idrees",
+    speaker: "Mufti Menk",
+    videoId: "eGgNrs9UyRU",
+    category: "Prophet Stories",
+    embedUrl: "https://www.youtube.com/embed/eGgNrs9UyRU",
+    thumbnailUrl: "https://img.youtube.com/vi/eGgNrs9UyRU/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=eGgNrs9UyRU"
+  },
+  {
+    title: "Stories Of The Prophets 12: Ibraheem and Ismail",
+    speaker: "Mufti Menk",
+    videoId: "j-1Rti9-H-k",
+    category: "Prophet Stories",
+    embedUrl: "https://www.youtube.com/embed/j-1Rti9-H-k",
+    thumbnailUrl: "https://img.youtube.com/vi/j-1Rti9-H-k/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=j-1Rti9-H-k"
+  },
+  {
+    title: "The Intriguing Story of Prophet Yusuf",
+    speaker: "Mufti Menk",
+    videoId: "vmuNyJYXRbg",
+    category: "Prophet Stories",
+    embedUrl: "https://www.youtube.com/embed/vmuNyJYXRbg",
+    thumbnailUrl: "https://img.youtube.com/vi/vmuNyJYXRbg/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=vmuNyJYXRbg"
+  },
+  {
+    title: "Stories Of The Prophets 20: Musa and Haroon",
+    speaker: "Mufti Menk",
+    videoId: "vldKHcVG2xA",
+    category: "Prophet Stories",
+    embedUrl: "https://www.youtube.com/embed/vldKHcVG2xA",
+    thumbnailUrl: "https://img.youtube.com/vi/vldKHcVG2xA/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=vldKHcVG2xA"
+  },
+  {
+    title: "Stories Of The Prophets 29: Isa",
+    speaker: "Mufti Menk",
+    videoId: "y0pc95YEloA",
+    category: "Prophet Stories",
+    embedUrl: "https://www.youtube.com/embed/y0pc95YEloA",
+    thumbnailUrl: "https://img.youtube.com/vi/y0pc95YEloA/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=y0pc95YEloA"
+  },
+
+  // QURAN RECITATIONS (10)
+  {
+    title: "Quran Recitation with Sheikh Mishary Alafasy",
+    speaker: "Mishary Rashid Alafasy",
+    videoId: "w8OkqixNr3s",
+    category: "Quran Recitations",
+    embedUrl: "https://www.youtube.com/embed/w8OkqixNr3s",
+    thumbnailUrl: "https://img.youtube.com/vi/w8OkqixNr3s/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=w8OkqixNr3s"
+  },
+  {
+    title: "Surah Al-Baqarah",
+    speaker: "Mishary Rashid Alafasy",
+    videoId: "X2YnP50cwNU",
+    category: "Quran Recitations",
+    embedUrl: "https://www.youtube.com/embed/X2YnP50cwNU",
+    thumbnailUrl: "https://img.youtube.com/vi/X2YnP50cwNU/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=X2YnP50cwNU"
+  },
+  {
+    title: "Surah Ar-Rahman",
+    speaker: "Mishary Rashid Alafasy",
+    videoId: "H4N5eFbLl9A",
+    category: "Quran Recitations",
+    embedUrl: "https://www.youtube.com/embed/H4N5eFbLl9A",
+    thumbnailUrl: "https://img.youtube.com/vi/H4N5eFbLl9A/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=H4N5eFbLl9A"
+  },
+  {
+    title: "Surah Al-Kahf",
+    speaker: "Mishary Rashid Alafasy",
+    videoId: "-FxEYa8joK8",
+    category: "Quran Recitations",
+    embedUrl: "https://www.youtube.com/embed/-FxEYa8joK8",
+    thumbnailUrl: "https://img.youtube.com/vi/-FxEYa8joK8/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=-FxEYa8joK8"
+  },
+  {
+    title: "Last 20 Surahs of the Quran",
+    speaker: "Mishary Rashid Alafasy",
+    videoId: "Q9SH1PZA0tM",
+    category: "Quran Recitations",
+    embedUrl: "https://www.youtube.com/embed/Q9SH1PZA0tM",
+    thumbnailUrl: "https://img.youtube.com/vi/Q9SH1PZA0tM/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=Q9SH1PZA0tM"
+  },
+  {
+    title: "Surah Al-Baqarah Full Quick Recitation",
+    speaker: "Mishary Rashid Alafasy",
+    videoId: "mcFkxppp9-M",
+    category: "Quran Recitations",
+    embedUrl: "https://www.youtube.com/embed/mcFkxppp9-M",
+    thumbnailUrl: "https://img.youtube.com/vi/mcFkxppp9-M/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=mcFkxppp9-M"
+  },
+  {
+    title: "Surah Ya Seen",
+    speaker: "Mishary Rashid Alafasy",
+    videoId: "Q9xYG8PLxeg",
+    category: "Quran Recitations",
+    embedUrl: "https://www.youtube.com/embed/Q9xYG8PLxeg",
+    thumbnailUrl: "https://img.youtube.com/vi/Q9xYG8PLxeg/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=Q9xYG8PLxeg"
+  },
+  {
+    title: "Surah Al-Fatiha",
+    speaker: "Mishary Rashid Alafasy",
+    videoId: "UDvh63xHVa0",
+    category: "Quran Recitations",
+    embedUrl: "https://www.youtube.com/embed/UDvh63xHVa0",
+    thumbnailUrl: "https://img.youtube.com/vi/UDvh63xHVa0/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=UDvh63xHVa0"
+  },
+  {
+    title: "Surah Al-Mulk",
+    speaker: "Mishary Rashid Alafasy",
+    videoId: "ifGIMi82aFE",
+    category: "Quran Recitations",
+    embedUrl: "https://www.youtube.com/embed/ifGIMi82aFE",
+    thumbnailUrl: "https://img.youtube.com/vi/ifGIMi82aFE/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=ifGIMi82aFE"
+  },
+  {
+    title: "Surah Al-Waqi'ah",
+    speaker: "Mishary Rashid Alafasy",
+    videoId: "NDE6iXOK7_Q",
+    category: "Quran Recitations",
+    embedUrl: "https://www.youtube.com/embed/NDE6iXOK7_Q",
+    thumbnailUrl: "https://img.youtube.com/vi/NDE6iXOK7_Q/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=NDE6iXOK7_Q"
+  },
+
+  // LECTURES (10)
+  {
+    title: "Reflection & Self Improvement",
+    speaker: "Mufti Menk",
+    videoId: "NBPBSLr5j5E",
+    category: "Lectures",
+    embedUrl: "https://www.youtube.com/embed/NBPBSLr5j5E",
+    thumbnailUrl: "https://img.youtube.com/vi/NBPBSLr5j5E/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=NBPBSLr5j5E"
+  },
+  {
+    title: "From Enemies to Brothers",
+    speaker: "Omar Suleiman",
+    videoId: "jY5j9p6rElQ",
+    category: "Lectures",
+    embedUrl: "https://www.youtube.com/embed/jY5j9p6rElQ",
+    thumbnailUrl: "https://img.youtube.com/vi/jY5j9p6rElQ/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=jY5j9p6rElQ"
+  },
+  {
+    title: "Guaranteed Ease During Hardship",
+    speaker: "Mufti Menk",
+    videoId: "wFzUSfYoF2k",
+    category: "Lectures",
+    embedUrl: "https://www.youtube.com/embed/wFzUSfYoF2k",
+    thumbnailUrl: "https://img.youtube.com/vi/wFzUSfYoF2k/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=wFzUSfYoF2k"
+  },
+  {
+    title: "The Secret to Finding Inner Peace",
+    speaker: "Omar Suleiman",
+    videoId: "DHVXN6Ylpxw",
+    category: "Lectures",
+    embedUrl: "https://www.youtube.com/embed/DHVXN6Ylpxw",
+    thumbnailUrl: "https://img.youtube.com/vi/DHVXN6Ylpxw/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=DHVXN6Ylpxw"
+  },
+  {
+    title: "Curing the Heart",
+    speaker: "Mufti Menk",
+    videoId: "fLeFdWfmxWg",
+    category: "Lectures",
+    embedUrl: "https://www.youtube.com/embed/fLeFdWfmxWg",
+    thumbnailUrl: "https://img.youtube.com/vi/fLeFdWfmxWg/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=fLeFdWfmxWg"
+  },
+  {
+    title: "Practicing Detachment",
+    speaker: "Omar Suleiman",
+    videoId: "qm3bi01R2KM",
+    category: "Lectures",
+    embedUrl: "https://www.youtube.com/embed/qm3bi01R2KM",
+    thumbnailUrl: "https://img.youtube.com/vi/qm3bi01R2KM/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=qm3bi01R2KM"
+  },
+  {
+    title: "Lessons from Hajj 2025",
+    speaker: "Mufti Menk",
+    videoId: "LdVyP-YU1fk",
+    category: "Lectures",
+    embedUrl: "https://www.youtube.com/embed/LdVyP-YU1fk",
+    thumbnailUrl: "https://img.youtube.com/vi/LdVyP-YU1fk/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=LdVyP-YU1fk"
+  },
+  {
+    title: "The Quranic Circle of Life",
+    speaker: "Mufti Menk",
+    videoId: "edt-9YzERk4",
+    category: "Lectures",
+    embedUrl: "https://www.youtube.com/embed/edt-9YzERk4",
+    thumbnailUrl: "https://img.youtube.com/vi/edt-9YzERk4/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=edt-9YzERk4"
+  },
+  {
+    title: "What It Means to Endure",
+    speaker: "Omar Suleiman",
+    videoId: "z9O2CalZ9E0",
+    category: "Lectures",
+    embedUrl: "https://www.youtube.com/embed/z9O2CalZ9E0",
+    thumbnailUrl: "https://img.youtube.com/vi/z9O2CalZ9E0/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=z9O2CalZ9E0"
+  },
+  {
+    title: "How to Ask Allah",
+    speaker: "Mufti Menk",
+    videoId: "r_4UK9cj4eA",
+    category: "Lectures",
+    embedUrl: "https://www.youtube.com/embed/r_4UK9cj4eA",
+    thumbnailUrl: "https://img.youtube.com/vi/r_4UK9cj4eA/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=r_4UK9cj4eA"
+  },
+
+  // KHUTBAHS (10)
+  {
+    title: "Signs That Allah Is At War With You",
+    speaker: "Omar Suleiman",
+    videoId: "pbttwoB1fU0",
+    category: "Khutbahs",
+    embedUrl: "https://www.youtube.com/embed/pbttwoB1fU0",
+    thumbnailUrl: "https://img.youtube.com/vi/pbttwoB1fU0/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=pbttwoB1fU0"
+  },
+  {
+    title: "How Every Day of Ramadan is Worth 70 Years",
+    speaker: "Omar Suleiman",
+    videoId: "qix2-6TCG1Q",
+    category: "Khutbahs",
+    embedUrl: "https://www.youtube.com/embed/qix2-6TCG1Q",
+    thumbnailUrl: "https://img.youtube.com/vi/qix2-6TCG1Q/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=qix2-6TCG1Q"
+  },
+  {
+    title: "Are You a Mediocre Muslim?",
+    speaker: "Omar Suleiman",
+    videoId: "9dFZagoZyRE",
+    category: "Khutbahs",
+    embedUrl: "https://www.youtube.com/embed/9dFZagoZyRE",
+    thumbnailUrl: "https://img.youtube.com/vi/9dFZagoZyRE/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=9dFZagoZyRE"
+  },
+  {
+    title: "Better Than 1000 Worshippers",
+    speaker: "Omar Suleiman",
+    videoId: "o3BOHDBIMe0",
+    category: "Khutbahs",
+    embedUrl: "https://www.youtube.com/embed/o3BOHDBIMe0",
+    thumbnailUrl: "https://img.youtube.com/vi/o3BOHDBIMe0/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=o3BOHDBIMe0"
+  },
+  {
+    title: "Hidden Causes of Disconnect from Allah",
+    speaker: "Omar Suleiman",
+    videoId: "C1HLDo0P-IQ",
+    category: "Khutbahs",
+    embedUrl: "https://www.youtube.com/embed/C1HLDo0P-IQ",
+    thumbnailUrl: "https://img.youtube.com/vi/C1HLDo0P-IQ/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=C1HLDo0P-IQ"
+  },
+  {
+    title: "Is Karma Real? The Consequences of Your Deeds",
+    speaker: "Omar Suleiman",
+    videoId: "tvvc3C_5ap0",
+    category: "Khutbahs",
+    embedUrl: "https://www.youtube.com/embed/tvvc3C_5ap0",
+    thumbnailUrl: "https://img.youtube.com/vi/tvvc3C_5ap0/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=tvvc3C_5ap0"
+  },
+  {
+    title: "Training Your Nafs in Sha'ban",
+    speaker: "Omar Suleiman",
+    videoId: "VY_QT8CiTLI",
+    category: "Khutbahs",
+    embedUrl: "https://www.youtube.com/embed/VY_QT8CiTLI",
+    thumbnailUrl: "https://img.youtube.com/vi/VY_QT8CiTLI/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=VY_QT8CiTLI"
+  },
+  {
+    title: "How to Build Your Laylatul Qadr Du'a List",
+    speaker: "Omar Suleiman",
+    videoId: "j8lip8LqhFA",
+    category: "Khutbahs",
+    embedUrl: "https://www.youtube.com/embed/j8lip8LqhFA",
+    thumbnailUrl: "https://img.youtube.com/vi/j8lip8LqhFA/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=j8lip8LqhFA"
+  },
+  {
+    title: "When Allah Hits You With A Wall",
+    speaker: "Omar Suleiman",
+    videoId: "Q0SFG-wtCts",
+    category: "Khutbahs",
+    embedUrl: "https://www.youtube.com/embed/Q0SFG-wtCts",
+    thumbnailUrl: "https://img.youtube.com/vi/Q0SFG-wtCts/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=Q0SFG-wtCts"
+  },
+  {
+    title: "How Much Du'a Do You Make for Others?",
+    speaker: "Omar Suleiman",
+    videoId: "Dr9P7MvKXxU",
+    category: "Khutbahs",
+    embedUrl: "https://www.youtube.com/embed/Dr9P7MvKXxU",
+    thumbnailUrl: "https://img.youtube.com/vi/Dr9P7MvKXxU/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=Dr9P7MvKXxU"
+  },
+
+  // DUA (10)
+  {
+    title: "Dua To Solve All Problems Quickly",
+    speaker: "Saad Al Qureshi",
+    videoId: "bSgLEtTYh0c",
+    category: "Dua",
+    embedUrl: "https://www.youtube.com/embed/bSgLEtTYh0c",
+    thumbnailUrl: "https://img.youtube.com/vi/bSgLEtTYh0c/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=bSgLEtTYh0c"
+  },
+  {
+    title: "40 Rabbana - Powerful Duas From the Quran",
+    speaker: "Omar Hisham Al Arabi",
+    videoId: "EuFgCbOEZ84",
+    category: "Dua",
+    embedUrl: "https://www.youtube.com/embed/EuFgCbOEZ84",
+    thumbnailUrl: "https://img.youtube.com/vi/EuFgCbOEZ84/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=EuFgCbOEZ84"
+  },
+  {
+    title: "Dua of The Prophet ﷺ",
+    speaker: "Mufti Menk",
+    videoId: "YAVk0A9oxO4",
+    category: "Dua",
+    embedUrl: "https://www.youtube.com/embed/YAVk0A9oxO4",
+    thumbnailUrl: "https://img.youtube.com/vi/YAVk0A9oxO4/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=YAVk0A9oxO4"
+  },
+  {
+    title: "Beautiful Morning Dua",
+    speaker: "Omar Hisham Al Arabi",
+    videoId: "YsERYonSQlk",
+    category: "Dua",
+    embedUrl: "https://www.youtube.com/embed/YsERYonSQlk",
+    thumbnailUrl: "https://img.youtube.com/vi/YsERYonSQlk/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=YsERYonSQlk"
+  },
+  {
+    title: "Morning Dua in Full",
+    speaker: "Omar Hisham Al Arabi",
+    videoId: "_zZmKMac8wE",
+    category: "Dua",
+    embedUrl: "https://www.youtube.com/embed/_zZmKMac8wE",
+    thumbnailUrl: "https://img.youtube.com/vi/_zZmKMac8wE/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=_zZmKMac8wE"
+  },
+  {
+    title: "Dua for Exam Success",
+    speaker: "Omar Hisham Al Arabi",
+    videoId: "At0-upXqpYw",
+    category: "Dua",
+    embedUrl: "https://www.youtube.com/embed/At0-upXqpYw",
+    thumbnailUrl: "https://img.youtube.com/vi/At0-upXqpYw/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=At0-upXqpYw"
+  },
+  {
+    title: "The Dua That Will Give You Everything You Want",
+    speaker: "Omar Hisham Al Arabi",
+    videoId: "BXBeGG2MXGk",
+    category: "Dua",
+    embedUrl: "https://www.youtube.com/embed/BXBeGG2MXGk",
+    thumbnailUrl: "https://img.youtube.com/vi/BXBeGG2MXGk/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=BXBeGG2MXGk"
+  },
+  {
+    title: "25 Duas from Qur'an",
+    speaker: "Mevlan Kurtishi",
+    videoId: "42AVhDZJcNg",
+    category: "Dua",
+    embedUrl: "https://www.youtube.com/embed/42AVhDZJcNg",
+    thumbnailUrl: "https://img.youtube.com/vi/42AVhDZJcNg/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=42AVhDZJcNg"
+  },
+  {
+    title: "Evening Duas for Protection",
+    speaker: "Omar Hisham Al Arabi",
+    videoId: "mxyAwfbfsks",
+    category: "Dua",
+    embedUrl: "https://www.youtube.com/embed/mxyAwfbfsks",
+    thumbnailUrl: "https://img.youtube.com/vi/mxyAwfbfsks/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=mxyAwfbfsks"
+  },
+  {
+    title: "Morning Duas Ruqyah",
+    speaker: "Omar Hisham Al Arabi",
+    videoId: "LNPWF1IpZOc",
+    category: "Dua",
+    embedUrl: "https://www.youtube.com/embed/LNPWF1IpZOc",
+    thumbnailUrl: "https://img.youtube.com/vi/LNPWF1IpZOc/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=LNPWF1IpZOc"
+  },
+
+  // DHIKR (10)
+  {
+    title: "The Most Powerful Dhikr",
+    speaker: "Mufti Menk",
+    videoId: "2nwGkFLr5GI",
+    category: "Dhikr",
+    embedUrl: "https://www.youtube.com/embed/2nwGkFLr5GI",
+    thumbnailUrl: "https://img.youtube.com/vi/2nwGkFLr5GI/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=2nwGkFLr5GI"
+  },
+  {
+    title: "The Du'a Abu Bakr Asked For",
+    speaker: "Omar Suleiman",
+    videoId: "aGC7rKiRl04",
+    category: "Dhikr",
+    embedUrl: "https://www.youtube.com/embed/aGC7rKiRl04",
+    thumbnailUrl: "https://img.youtube.com/vi/aGC7rKiRl04/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=aGC7rKiRl04"
+  },
+  {
+    title: "What is the Best Dhikr for Laylatul Qadr?",
+    speaker: "Omar Suleiman",
+    videoId: "sRCI23clwdA",
+    category: "Dhikr",
+    embedUrl: "https://www.youtube.com/embed/sRCI23clwdA",
+    thumbnailUrl: "https://img.youtube.com/vi/sRCI23clwdA/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=sRCI23clwdA"
+  },
+  {
+    title: "Powerful Islamic Dhikr",
+    speaker: "Islamic Audio",
+    videoId: "JGmgc8JoZZQ",
+    category: "Dhikr",
+    embedUrl: "https://www.youtube.com/embed/JGmgc8JoZZQ",
+    thumbnailUrl: "https://img.youtube.com/vi/JGmgc8JoZZQ/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=JGmgc8JoZZQ"
+  },
+  {
+    title: "Morning Adhkar - Recite Daily",
+    speaker: "Mufti Menk",
+    videoId: "P8EIBksC0MA",
+    category: "Dhikr",
+    embedUrl: "https://www.youtube.com/embed/P8EIBksC0MA",
+    thumbnailUrl: "https://img.youtube.com/vi/P8EIBksC0MA/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=P8EIBksC0MA"
+  },
+  {
+    title: "These 4 Dhikr Will Give You Everything In Your Life",
+    speaker: "Islam The Ultimate Peace",
+    videoId: "BipGEsz9lBo",
+    category: "Dhikr",
+    embedUrl: "https://www.youtube.com/embed/BipGEsz9lBo",
+    thumbnailUrl: "https://img.youtube.com/vi/BipGEsz9lBo/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=BipGEsz9lBo"
+  },
+  {
+    title: "The Special Dhikr Most Muslims Miss in Ramadan",
+    speaker: "Omar Suleiman",
+    videoId: "EOc_utfNmLY",
+    category: "Dhikr",
+    embedUrl: "https://www.youtube.com/embed/EOc_utfNmLY",
+    thumbnailUrl: "https://img.youtube.com/vi/EOc_utfNmLY/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=EOc_utfNmLY"
+  },
+  {
+    title: "Listen Daily | Astaghfirullah Zikr",
+    speaker: "Islamic Audio",
+    videoId: "FgYHCA-aQvw",
+    category: "Dhikr",
+    embedUrl: "https://www.youtube.com/embed/FgYHCA-aQvw",
+    thumbnailUrl: "https://img.youtube.com/vi/FgYHCA-aQvw/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=FgYHCA-aQvw"
+  },
+  {
+    title: "Evening Adhkar and Dua",
+    speaker: "Omar Hisham Al Arabi",
+    videoId: "2Mq2gvBV3RE",
+    category: "Dhikr",
+    embedUrl: "https://www.youtube.com/embed/2Mq2gvBV3RE",
+    thumbnailUrl: "https://img.youtube.com/vi/2Mq2gvBV3RE/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=2Mq2gvBV3RE"
+  },
+  {
+    title: "The Morning Adhkar",
+    speaker: "Omar Hisham Al Arabi",
+    videoId: "OOO2MKclvUM",
+    category: "Dhikr",
+    embedUrl: "https://www.youtube.com/embed/OOO2MKclvUM",
+    thumbnailUrl: "https://img.youtube.com/vi/OOO2MKclvUM/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=OOO2MKclvUM"
+  }
+];

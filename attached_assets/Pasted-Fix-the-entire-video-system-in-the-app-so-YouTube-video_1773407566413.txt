@@ -1,0 +1,115 @@
+Fix the entire video system in the app so YouTube videos and thumbnails always work correctly.
+
+VIDEO DATA STRUCTURE
+Update the video data model to store a YouTube videoId instead of a full YouTube URL.
+
+Each video object should include:
+- title
+- speaker
+- videoId
+- duration (optional)
+
+Example:
+{
+  title: "The Power of Bismillah",
+  speaker: "Mufti Menk",
+  videoId: "abc123xyz",
+  duration: "8:42"
+}
+
+VIDEO ID EXTRACTION
+Add a helper function that extracts the YouTube video ID from any of these link formats:
+- youtube.com/watch?v=
+- youtube.com/shorts/
+- youtu.be/
+
+Example formats the function must support:
+https://www.youtube.com/watch?v=VIDEO_ID
+https://youtu.be/VIDEO_ID
+https://www.youtube.com/shorts/VIDEO_ID
+
+Return only the video ID.
+
+EMBED VIDEO PLAYER
+Generate the embedded video URL using the videoId.
+
+Format:
+https://www.youtube.com/embed/VIDEO_ID
+
+Use this URL in the iframe video player.
+
+Example iframe:
+<iframe
+  width="100%"
+  height="215"
+  src="https://www.youtube.com/embed/VIDEO_ID"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
+THUMBNAILS
+Automatically generate thumbnails using the videoId.
+
+Thumbnail URL format:
+https://img.youtube.com/vi/VIDEO_ID/hqdefault.jpg
+
+Display this thumbnail image on every video card.
+
+Add an image fallback if the thumbnail fails to load.
+
+Example fallback behaviour:
+If thumbnail fails → show a placeholder thumbnail with a play icon overlay.
+
+VIDEO CARDS
+Improve the video cards in the Videos section.
+
+Each card should show:
+- thumbnail image
+- play icon overlay
+- video title
+- speaker name
+- video duration
+
+Make the thumbnail clickable.
+
+VIDEO PLAYER SCREEN
+When a user taps a video card:
+- open a video player screen
+- load the embed URL using the videoId
+- display title and speaker above or below the player
+
+EMBED FALLBACK
+Some YouTube videos cannot be embedded.
+
+If the embed fails or shows “Video unavailable”:
+- show a message: “This video cannot be played in the app.”
+- display a button labeled “Open in YouTube”.
+
+The button should open:
+https://www.youtube.com/watch?v=VIDEO_ID
+
+PERFORMANCE IMPROVEMENT
+Lazy load thumbnails so video images only load when visible on screen.
+
+Add loading skeleton placeholders while thumbnails load.
+
+WATCH PROGRESS
+Track video watch progress and store it locally.
+
+Display a small progress bar on the thumbnail for partially watched videos.
+
+CONTINUE WATCHING
+Add a “Continue Watching” section that shows videos the user started but did not finish.
+
+TESTING
+Test the system with multiple YouTube formats:
+- watch links
+- shorts links
+- youtu.be links
+
+Ensure:
+- thumbnails always appear
+- videos play inside the app
+- fallback opens YouTube if embedding fails.

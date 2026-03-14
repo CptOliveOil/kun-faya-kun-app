@@ -1,0 +1,281 @@
+export const halalTokVideos = [
+  {
+    title: "Only Complain To Allah",
+    speaker: "Mufti Menk",
+    videoId: "k-unPWLT2YE",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/k-unPWLT2YE",
+    thumbnailUrl: "https://img.youtube.com/vi/k-unPWLT2YE/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=k-unPWLT2YE"
+  },
+  {
+    title: "Dhikr - A Solution to Calm The Heart",
+    speaker: "Omar Suleiman",
+    videoId: "GK7CxaxCMvw",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/GK7CxaxCMvw",
+    thumbnailUrl: "https://img.youtube.com/vi/GK7CxaxCMvw/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=GK7CxaxCMvw"
+  },
+  {
+    title: "How to Calm a Turbulent Heart",
+    speaker: "Nouman Ali Khan",
+    videoId: "0jOMewDuqMI",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/0jOMewDuqMI",
+    thumbnailUrl: "https://img.youtube.com/vi/0jOMewDuqMI/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=0jOMewDuqMI"
+  },
+  {
+    title: "Truly Liberated",
+    speaker: "Mufti Menk",
+    videoId: "DUimTlNWD4o",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/DUimTlNWD4o",
+    thumbnailUrl: "https://img.youtube.com/vi/DUimTlNWD4o/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=DUimTlNWD4o"
+  },
+  {
+    title: "Never Stay Neutral",
+    speaker: "Mufti Menk",
+    videoId: "Cu_5bXKWqwg",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/Cu_5bXKWqwg",
+    thumbnailUrl: "https://img.youtube.com/vi/Cu_5bXKWqwg/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=Cu_5bXKWqwg"
+  },
+  {
+    title: "The Night Allah Changes Everything",
+    speaker: "Mufti Menk",
+    videoId: "6JDQNsJZ5bg",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/6JDQNsJZ5bg",
+    thumbnailUrl: "https://img.youtube.com/vi/6JDQNsJZ5bg/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=6JDQNsJZ5bg"
+  },
+  {
+    title: "Blinded by Sins",
+    speaker: "Mufti Menk",
+    videoId: "dCXbrr9XpCU",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/dCXbrr9XpCU",
+    thumbnailUrl: "https://img.youtube.com/vi/dCXbrr9XpCU/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=dCXbrr9XpCU"
+  },
+  {
+    title: "Allah's Army",
+    speaker: "Nouman Ali Khan",
+    videoId: "YBHvtnLwAf0",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/YBHvtnLwAf0",
+    thumbnailUrl: "https://img.youtube.com/vi/YBHvtnLwAf0/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=YBHvtnLwAf0"
+  },
+  {
+    title: "Mufti Menk Motivational Speech",
+    speaker: "Mufti Menk",
+    videoId: "uSFaphrOZ20",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/uSFaphrOZ20",
+    thumbnailUrl: "https://img.youtube.com/vi/uSFaphrOZ20/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=uSFaphrOZ20"
+  },
+  {
+    title: "Allah Made The Quran Easy",
+    speaker: "Nouman Ali Khan",
+    videoId: "EG6k731pm1I",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/EG6k731pm1I",
+    thumbnailUrl: "https://img.youtube.com/vi/EG6k731pm1I/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=EG6k731pm1I"
+  },
+  {
+    title: "The Unmatched Character of Prophet Muhammad ﷺ",
+    speaker: "Yaqeen Institute",
+    videoId: "7teljFXHEeQ",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/7teljFXHEeQ",
+    thumbnailUrl: "https://img.youtube.com/vi/7teljFXHEeQ/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=7teljFXHEeQ"
+  },
+  {
+    title: "Struggling with Salah?",
+    speaker: "Mufti Menk",
+    videoId: "yjQHYd8_1dc",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/yjQHYd8_1dc",
+    thumbnailUrl: "https://img.youtube.com/vi/yjQHYd8_1dc/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=yjQHYd8_1dc"
+  },
+  {
+    title: "The Dangerous Way We Misread Hardship",
+    speaker: "Omar Suleiman",
+    videoId: "Q_lRjAGv_TE",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/Q_lRjAGv_TE",
+    thumbnailUrl: "https://img.youtube.com/vi/Q_lRjAGv_TE/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=Q_lRjAGv_TE"
+  },
+  {
+    title: "Stop Getting Deceived",
+    speaker: "Nouman Ali Khan",
+    videoId: "JR3plz3IaXU",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/JR3plz3IaXU",
+    thumbnailUrl: "https://img.youtube.com/vi/JR3plz3IaXU/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=JR3plz3IaXU"
+  },
+  {
+    title: "When They Lie About You",
+    speaker: "Mufti Menk",
+    videoId: "04i4lQH-d1w",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/04i4lQH-d1w",
+    thumbnailUrl: "https://img.youtube.com/vi/04i4lQH-d1w/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=04i4lQH-d1w"
+  },
+  {
+    title: "Love For Allah v Love For Duniya",
+    speaker: "Omar Suleiman",
+    videoId: "VXDZtHwZaGc",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/VXDZtHwZaGc",
+    thumbnailUrl: "https://img.youtube.com/vi/VXDZtHwZaGc/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=VXDZtHwZaGc"
+  },
+  {
+    title: "You Are Not Helpless",
+    speaker: "Nouman Ali Khan",
+    videoId: "K_WbJviYcgo",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/K_WbJviYcgo",
+    thumbnailUrl: "https://img.youtube.com/vi/K_WbJviYcgo/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=K_WbJviYcgo"
+  },
+  {
+    title: "Your Du'a Can Change the World",
+    speaker: "Omar Suleiman",
+    videoId: "HwXyliHiF2A",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/HwXyliHiF2A",
+    thumbnailUrl: "https://img.youtube.com/vi/HwXyliHiF2A/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=HwXyliHiF2A"
+  },
+  {
+    title: "The Day That Feels Like a Prayer",
+    speaker: "Nouman Ali Khan",
+    videoId: "mBITcOZQK-0",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/mBITcOZQK-0",
+    thumbnailUrl: "https://img.youtube.com/vi/mBITcOZQK-0/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=mBITcOZQK-0"
+  },
+  {
+    title: "Ayatul Kursi - The Divine Throne",
+    speaker: "Islamic Shorts",
+    videoId: "7p9fLsSJKts",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/7p9fLsSJKts",
+    thumbnailUrl: "https://img.youtube.com/vi/7p9fLsSJKts/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=7p9fLsSJKts"
+  },
+  {
+    title: "The Reality of Jannah That Will Make You Cry",
+    speaker: "Islamic Shorts",
+    videoId: "ORq5dm7VjUs",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/ORq5dm7VjUs",
+    thumbnailUrl: "https://img.youtube.com/vi/ORq5dm7VjUs/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=ORq5dm7VjUs"
+  },
+  {
+    title: "Can't Wait 30 Seconds for Allah?",
+    speaker: "Islamic Shorts",
+    videoId: "lDAFRjlvtEQ",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/lDAFRjlvtEQ",
+    thumbnailUrl: "https://img.youtube.com/vi/lDAFRjlvtEQ/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=lDAFRjlvtEQ"
+  },
+  {
+    title: "Allah Is Enough for Everyone",
+    speaker: "Islamic Shorts",
+    videoId: "6bNiP6VDPwQ",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/6bNiP6VDPwQ",
+    thumbnailUrl: "https://img.youtube.com/vi/6bNiP6VDPwQ/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=6bNiP6VDPwQ"
+  },
+  {
+    title: "The Quran's Message in 60 Seconds",
+    speaker: "Quran in 60 Seconds",
+    videoId: "CJwjFYcZB5E",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/CJwjFYcZB5E",
+    thumbnailUrl: "https://img.youtube.com/vi/CJwjFYcZB5E/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=CJwjFYcZB5E"
+  },
+  {
+    title: "Allah's Mercy Is Truly Endless",
+    speaker: "Daily Islamic Shorts",
+    videoId: "N2qyMMFjtME",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/N2qyMMFjtME",
+    thumbnailUrl: "https://img.youtube.com/vi/N2qyMMFjtME/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=N2qyMMFjtME"
+  },
+  {
+    title: "Power of Fasting — Science + Islam Explained",
+    speaker: "Islamic Motivation",
+    videoId: "oIAKT375uy0",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/oIAKT375uy0",
+    thumbnailUrl: "https://img.youtube.com/vi/oIAKT375uy0/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=oIAKT375uy0"
+  },
+  {
+    title: "Prophet Dawud Receives Divine Wisdom",
+    speaker: "Islamic Shorts",
+    videoId: "G8_aDxVVpkE",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/G8_aDxVVpkE",
+    thumbnailUrl: "https://img.youtube.com/vi/G8_aDxVVpkE/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=G8_aDxVVpkE"
+  },
+  {
+    title: "60 Seconds of Quranic Guidance",
+    speaker: "Quran Lovers",
+    videoId: "25bZCTfWCAM",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/25bZCTfWCAM",
+    thumbnailUrl: "https://img.youtube.com/vi/25bZCTfWCAM/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=25bZCTfWCAM"
+  },
+  {
+    title: "We Cannot Judge Someone's Heart",
+    speaker: "Islamic Reminder",
+    videoId: "vuRqBT5uqmA",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/vuRqBT5uqmA",
+    thumbnailUrl: "https://img.youtube.com/vi/vuRqBT5uqmA/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=vuRqBT5uqmA"
+  },
+  {
+    title: "Even When He ﷺ Could No Longer Speak",
+    speaker: "Omar Suleiman",
+    videoId: "kpMRUVM7M-I",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/kpMRUVM7M-I",
+    thumbnailUrl: "https://img.youtube.com/vi/kpMRUVM7M-I/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=kpMRUVM7M-I"
+  },
+  {
+    title: "Work On Your Prayer!",
+    speaker: "Mufti Menk",
+    videoId: "WacvX7gn-cg",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/WacvX7gn-cg",
+    thumbnailUrl: "https://img.youtube.com/vi/WacvX7gn-cg/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=WacvX7gn-cg"
+  }
+];

@@ -1,0 +1,71 @@
+const PRIMARY = "#7CB99E";
+const PRIMARY_DARK = "#5A9B80";
+const GOLD = "#C9A84C";
+const CREAM = "#FAF7F2";
+
+const Colors = {
+  light: {
+    text: "#1A2420",
+    textSecondary: "#6B7A76",
+    textMuted: "#9CA8A4",
+    background: CREAM,
+    backgroundSecondary: "#F0EDE8",
+    backgroundTertiary: "#E8E4DE",
+    card: "#FFFFFF",
+    cardBorder: "rgba(0,0,0,0.06)",
+    primary: PRIMARY,
+    primaryDark: PRIMARY_DARK,
+    primaryLight: "#EAF3EF",
+    gold: GOLD,
+    goldLight: "#FBF3DE",
+    tint: PRIMARY,
+    tabIconDefault: "#9CA8A4",
+    tabIconSelected: PRIMARY,
+    separator: "rgba(0,0,0,0.08)",
+    shadow: "rgba(0,0,0,0.12)",
+    success: "#4CAF7D",
+    error: "#E57373",
+    warning: "#F0A94A",
+    overlay: "rgba(26,36,32,0.5)",
+    islamic: {
+      fajr: "#7C9DBF",
+      dhuhr: "#F0A94A",
+      asr: "#7CB99E",
+      maghrib: "#E8826A",
+      isha: "#8B7EC8",
+    },
+  },
+  dark: {
+    text: "#F0EDE8",
+    textSecondary: "#9CA8A4",
+    textMuted: "#6B7A76",
+    background: "#0F1814",
+    backgroundSecondary: "#1A2420",
+    backgroundTertiary: "#243028",
+    card: "#1A2420",
+    cardBorder: "rgba(255,255,255,0.06)",
+    primary: "#8FCFB5",
+    primaryDark: "#7CB99E",
+    primaryLight: "#1A2E26",
+    gold: "#D4B05C",
+    goldLight: "#2A2416",
+    tint: "#8FCFB5",
+    tabIconDefault: "#6B7A76",
+    tabIconSelected: "#8FCFB5",
+    separator: "rgba(255,255,255,0.08)",
+    shadow: "rgba(0,0,0,0.4)",
+    success: "#5DC987",
+    error: "#EF9A9A",
+    warning: "#F7C46C",
+    overlay: "rgba(0,0,0,0.65)",
+    islamic: {
+      fajr: "#8CAFC7",
+      dhuhr: "#F7C46C",
+      asr: "#8FCFB5",
+      maghrib: "#F09A84",
+      isha: "#A99ED8",
+    },
+  },
+};
+
+export default Colors;

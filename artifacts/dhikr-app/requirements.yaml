@@ -1,0 +1,20 @@
+packages:
+  "framer-motion": "Essential for smooth, gamified micro-interactions, page transitions, and the tasbeeh counter animations"
+  "canvas-confetti": "Provides the celebratory particle bursts when users reach dhikr milestones"
+  "@types/canvas-confetti": "Type definitions for canvas-confetti"
+  "uuid": "Required to generate and persist a unique sessionId for tracking anonymous user progress"
+  "@types/uuid": "Type definitions for uuid"
+  "lucide-react": "Beautiful, consistent iconography for the app interface"
+
+images:
+  - path: "artifacts/dhikr-app/public/images/islamic-bg.png"
+    description: "Deep emerald green background with very subtle, elegant gold Islamic geometric patterns. Low contrast, dark, moody, and serene. Suitable for placing white text over."
+    aspect_ratio: "9:16"
+  - path: "artifacts/dhikr-app/public/images/ornament.png"
+    description: "A delicate, luxurious gold Islamic arch or horizontal decorative divider. Transparent background."
+    aspect_ratio: "16:9"
+
+notes:
+  - "Assuming @workspace/api-client-react is available and provides the React Query hooks as shown in the prompt."
+  - "App is designed mobile-first (max-w-md container) since a Tasbeeh counter is ergonomically best used on a phone-like form factor. Desktop users will see a centered mobile-app frame with a beautiful blurred background."
+  - "We use local state for rapid tapping to ensure zero latency, syncing to the backend on milestones or when changing views."

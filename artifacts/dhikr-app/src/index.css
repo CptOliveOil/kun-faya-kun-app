@@ -1,0 +1,254 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-card-border: hsl(var(--card-border));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-popover-border: hsl(var(--popover-border));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  --color-silver: hsl(var(--silver));
+  --color-silver-foreground: hsl(var(--silver-foreground));
+
+  --color-gold: hsl(var(--gold));
+  --color-gold-foreground: hsl(var(--gold-foreground));
+
+  --font-sans: 'Inter', sans-serif;
+  --font-arabic: 'Noto Naskh Arabic', serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 16px);
+}
+
+:root {
+  --background: 138 28% 93%;
+  --foreground: 148 22% 11%;
+  
+  --border: 43 55% 70%;
+  --input: 43 55% 70%;
+  --ring: 145 42% 36%;
+
+  --card: 42 32% 96%;
+  --card-foreground: 148 22% 11%;
+  --card-border: 43 55% 70%;
+
+  --popover: 42 32% 96%;
+  --popover-foreground: 148 22% 11%;
+  --popover-border: 43 55% 70%;
+
+  --primary: 145 42% 36%;
+  --primary-foreground: 0 0% 100%;
+  
+  --secondary: 43 78% 50%;
+  --secondary-foreground: 43 72% 10%;
+  
+  --muted: 138 20% 86%;
+  --muted-foreground: 148 14% 42%;
+
+  --accent: 138 26% 88%;
+  --accent-foreground: 148 32% 18%;
+
+  --destructive: 0 70% 50%;
+  --destructive-foreground: 0 0% 100%;
+
+  --silver: 215 15% 72%;
+  --silver-foreground: 215 15% 28%;
+
+  --gold: 43 78% 50%;
+  --gold-foreground: 43 72% 15%;
+
+  --radius: 1.5rem; 
+  
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.04);
+  --shadow: 0 4px 8px -1px rgb(0 0 0 / 0.06), 0 2px 4px -2px rgb(0 0 0 / 0.04);
+  --shadow-md: 0 10px 20px -3px rgb(0 0 0 / 0.06), 0 4px 8px -4px rgb(0 0 0 / 0.04);
+  --shadow-lg: 0 20px 30px -5px rgb(0 0 0 / 0.06), 0 8px 12px -6px rgb(0 0 0 / 0.04);
+  --shadow-xl: 0 25px 50px -12px rgb(0 0 0 / 0.1);
+}
+
+.dark {
+  --background: 150 20% 8%;
+  --foreground: 140 10% 92%;
+  
+  --border: 43 35% 30%;
+  --input: 43 35% 30%;
+  --ring: 43 72% 52%;
+
+  --card: 150 18% 12%;
+  --card-foreground: 140 10% 92%;
+  --card-border: 43 35% 30%;
+
+  --popover: 150 18% 12%;
+  --popover-foreground: 140 10% 92%;
+  --popover-border: 43 35% 30%;
+
+  --primary: 150 45% 38%;
+  --primary-foreground: 0 0% 100%;
+  
+  --secondary: 43 72% 52%;
+  --secondary-foreground: 0 0% 100%;
+  
+  --muted: 150 15% 18%;
+  --muted-foreground: 140 8% 60%;
+
+  --accent: 150 25% 20%;
+  --accent-foreground: 140 10% 92%;
+
+  --destructive: 0 70% 50%;
+  --destructive-foreground: 0 0% 100%;
+
+  --silver: 150 8% 45%;
+  --silver-foreground: 150 8% 80%;
+
+  --gold: 43 72% 52%;
+  --gold-foreground: 43 72% 90%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+  
+  .arabic-text {
+    font-family: var(--font-arabic);
+    line-height: 2;
+    direction: rtl;
+    text-align: right;
+  }
+
+  .text-large {
+    font-size: 118%;
+  }
+  .text-extra-large {
+    font-size: 135%;
+  }
+
+  .high-contrast * {
+    font-weight: 600 !important;
+  }
+  .high-contrast .text-muted-foreground {
+    color: hsl(var(--foreground)) !important;
+  }
+}
+
+@utility scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@utility tap-highlight-transparent {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@utility frosted-glass {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid hsl(43 50% 65% / 0.5);
+}
+
+@utility frosted-card {
+  background: hsl(40 30% 93% / 0.85);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  border: 1px solid hsl(43 50% 65% / 0.5);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.03);
+
+  .dark & {
+    background: hsl(150 18% 14% / 0.85);
+    border-color: hsl(43 35% 30% / 0.5);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@utility glass-panel {
+  background: hsl(40 30% 93% / 0.85);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  border: 1px solid hsl(43 50% 65% / 0.5);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.03);
+
+  .dark & {
+    background: hsl(150 18% 14% / 0.85);
+    border-color: hsl(43 35% 30% / 0.5);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@utility gold-border-rounded {
+  border: 1.5px solid #C9A84C;
+  box-shadow: 0 0 0 0.5px rgba(201, 168, 76, 0.3);
+}
+
+@utility gold-gradient {
+  background: linear-gradient(to bottom right, #E6C875, #C9A84C, #A68832);
+}
+
+@utility gold-text-gradient {
+  background: linear-gradient(to bottom right, #E6C875, #C9A84C, #A68832);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@utility silver-gradient {
+  background: linear-gradient(to bottom right, #D8DDE3, #BCC4CC, #A0AAB4);
+}
+
+@utility silver-text-gradient {
+  background: linear-gradient(to bottom right, #C0C8D0, #A8B4BC, #8C98A0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@utility chrome-shine {
+  background: linear-gradient(135deg, 
+    rgba(255,255,255,0.1) 0%, 
+    rgba(255,255,255,0.3) 25%,
+    rgba(255,255,255,0.1) 50%,
+    rgba(255,255,255,0.25) 75%,
+    rgba(255,255,255,0.1) 100%);
+}
+
+@utility text-shadow-glow {
+  text-shadow: 0 2px 10px rgba(201, 168, 76, 0.3);
+}

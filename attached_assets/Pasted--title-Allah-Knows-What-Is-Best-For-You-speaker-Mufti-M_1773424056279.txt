@@ -1,0 +1,100 @@
+{
+  title: "Allah Knows What Is Best For You",
+  speaker: "Mufti Menk",
+  videoId: "f6E2C0u7L1A",
+  duration: "9:45",
+  category: "Daily Reminders",
+  embedUrl: "https://www.youtube.com/embed/f6E2C0u7L1A",
+  thumbnailUrl: "https://img.youtube.com/vi/f6E2C0u7L1A/hqdefault.jpg",
+  youtubeUrl: "https://www.youtube.com/watch?v=f6E2C0u7L1A"
+},
+{
+  title: "Never Lose Hope in Allah",
+  speaker: "Mufti Menk",
+  videoId: "N4dGZq9u1Go",
+  duration: "10:01",
+  category: "Daily Reminders",
+  embedUrl: "https://www.youtube.com/embed/N4dGZq9u1Go",
+  thumbnailUrl: "https://img.youtube.com/vi/N4dGZq9u1Go/hqdefault.jpg",
+  youtubeUrl: "https://www.youtube.com/watch?v=N4dGZq9u1Go"
+},
+{
+  title: "Allah Loves Those Who Repent",
+  speaker: "Mufti Menk",
+  videoId: "R5pFvS8wzIY",
+  duration: "11:12",
+  category: "Daily Reminders",
+  embedUrl: "https://www.youtube.com/embed/R5pFvS8wzIY",
+  thumbnailUrl: "https://img.youtube.com/vi/R5pFvS8wzIY/hqdefault.jpg",
+  youtubeUrl: "https://www.youtube.com/watch?v=R5pFvS8wzIY"
+},
+{
+  title: "The Importance of Sabr",
+  speaker: "Omar Suleiman",
+  videoId: "z0q8Y0xjY3M",
+  duration: "8:36",
+  category: "Daily Reminders",
+  embedUrl: "https://www.youtube.com/embed/z0q8Y0xjY3M",
+  thumbnailUrl: "https://img.youtube.com/vi/z0q8Y0xjY3M/hqdefault.jpg",
+  youtubeUrl: "https://www.youtube.com/watch?v=z0q8Y0xjY3M"
+},
+{
+  title: "Allah's Mercy Is Greater Than Your Sins",
+  speaker: "Omar Suleiman",
+  videoId: "kUuY5Yw6s8E",
+  duration: "9:04",
+  category: "Daily Reminders",
+  embedUrl: "https://www.youtube.com/embed/kUuY5Yw6s8E",
+  thumbnailUrl: "https://img.youtube.com/vi/kUuY5Yw6s8E/hqdefault.jpg",
+  youtubeUrl: "https://www.youtube.com/watch?v=kUuY5Yw6s8E"
+},
+{
+  title: "Why Allah Tests Believers",
+  speaker: "Nouman Ali Khan",
+  videoId: "X5n4S4mQ7Ag",
+  duration: "13:18",
+  category: "Daily Reminders",
+  embedUrl: "https://www.youtube.com/embed/X5n4S4mQ7Ag",
+  thumbnailUrl: "https://img.youtube.com/vi/X5n4S4mQ7Ag/hqdefault.jpg",
+  youtubeUrl: "https://www.youtube.com/watch?v=X5n4S4mQ7Ag"
+},
+{
+  title: "The Beauty of Tawakkul",
+  speaker: "Nouman Ali Khan",
+  videoId: "8GmQp3lE7s0",
+  duration: "12:24",
+  category: "Daily Reminders",
+  embedUrl: "https://www.youtube.com/embed/8GmQp3lE7s0",
+  thumbnailUrl: "https://img.youtube.com/vi/8GmQp3lE7s0/hqdefault.jpg",
+  youtubeUrl: "https://www.youtube.com/watch?v=8GmQp3lE7s0"
+},
+{
+  title: "Allah Sees Your Struggle",
+  speaker: "Mufti Menk",
+  videoId: "hY2PjKp2y9g",
+  duration: "7:59",
+  category: "Daily Reminders",
+  embedUrl: "https://www.youtube.com/embed/hY2PjKp2y9g",
+  thumbnailUrl: "https://img.youtube.com/vi/hY2PjKp2y9g/hqdefault.jpg",
+  youtubeUrl: "https://www.youtube.com/watch?v=hY2PjKp2y9g"
+},
+{
+  title: "Make Dua With Certainty",
+  speaker: "Mufti Menk",
+  videoId: "3mX5s9u7qVQ",
+  duration: "9:11",
+  category: "Daily Reminders",
+  embedUrl: "https://www.youtube.com/embed/3mX5s9u7qVQ",
+  thumbnailUrl: "https://img.youtube.com/vi/3mX5s9u7qVQ/hqdefault.jpg",
+  youtubeUrl: "https://www.youtube.com/watch?v=3mX5s9u7qVQ"
+},
+{
+  title: "Allah Is Always With You",
+  speaker: "Omar Suleiman",
+  videoId: "eX3gJ7QF7Hk",
+  duration: "8:05",
+  category: "Daily Reminders",
+  embedUrl: "https://www.youtube.com/embed/eX3gJ7QF7Hk",
+  thumbnailUrl: "https://img.youtube.com/vi/eX3gJ7QF7Hk/hqdefault.jpg",
+  youtubeUrl: "https://www.youtube.com/watch?v=eX3gJ7QF7Hk"
+}

@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Dhikr & Dua App"
+version = "1.0.0"
+id = "artifacts/dhikr-app"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+localPort = 21533
+name = "web"
+paths = ["/"]
+
+[services.development]
+run = "pnpm --filter @workspace/dhikr-app run dev"
+
+[services.env]
+PORT = "21533"
+BASE_PATH = "/"
+
+[services.production]
+build = ["pnpm", "--filter", "@workspace/dhikr-app", "run", "build"]
+publicDir = "artifacts/dhikr-app/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"

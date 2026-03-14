@@ -1,0 +1,133 @@
+export const islamicVideos = [
+  {
+    title: "The Power of Bismillah",
+    speaker: "Mufti Menk",
+    videoId: "YSp4tZQzoDo",
+    duration: "8:42",
+    category: "Daily Reminders",
+    embedUrl: "https://www.youtube.com/embed/YSp4tZQzoDo",
+    thumbnailUrl: "https://img.youtube.com/vi/YSp4tZQzoDo/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=YSp4tZQzoDo"
+  },
+  {
+    title: "Why Does Allah Test Us?",
+    speaker: "Nouman Ali Khan",
+    videoId: "DBGYumYEOVU",
+    duration: "15:20",
+    category: "Daily Reminders",
+    embedUrl: "https://www.youtube.com/embed/DBGYumYEOVU",
+    thumbnailUrl: "https://img.youtube.com/vi/DBGYumYEOVU/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=DBGYumYEOVU"
+  },
+  {
+    title: "Be Grateful to Allah",
+    speaker: "Mufti Menk",
+    videoId: "PBt1mcAO0do",
+    duration: "12:05",
+    category: "Daily Reminders",
+    embedUrl: "https://www.youtube.com/embed/PBt1mcAO0do",
+    thumbnailUrl: "https://img.youtube.com/vi/PBt1mcAO0do/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=PBt1mcAO0do"
+  },
+  {
+    title: "Trust Allah's Plan",
+    speaker: "Omar Suleiman",
+    videoId: "5uAtB_eBgOM",
+    duration: "10:33",
+    category: "Daily Reminders",
+    embedUrl: "https://www.youtube.com/embed/5uAtB_eBgOM",
+    thumbnailUrl: "https://img.youtube.com/vi/5uAtB_eBgOM/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=5uAtB_eBgOM"
+  },
+
+  {
+    title: "Say Bismillah Before Everything",
+    speaker: "Mufti Menk",
+    videoId: "v2R4cE9s1Wg",
+    duration: "0:32",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/v2R4cE9s1Wg",
+    thumbnailUrl: "https://img.youtube.com/vi/v2R4cE9s1Wg/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=v2R4cE9s1Wg"
+  },
+  {
+    title: "Allah Sees Your Effort",
+    speaker: "Omar Suleiman",
+    videoId: "k7F5s1vWJ4A",
+    duration: "0:35",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/k7F5s1vWJ4A",
+    thumbnailUrl: "https://img.youtube.com/vi/k7F5s1vWJ4A/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=k7F5s1vWJ4A"
+  },
+  {
+    title: "One Small Dua Changes Everything",
+    speaker: "Mufti Menk",
+    videoId: "pY8T5W2b4nQ",
+    duration: "0:30",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/pY8T5W2b4nQ",
+    thumbnailUrl: "https://img.youtube.com/vi/pY8T5W2b4nQ/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=pY8T5W2b4nQ"
+  },
+  {
+    title: "Never Underestimate Dhikr",
+    speaker: "Nouman Ali Khan",
+    videoId: "B0Y4p3V7nZs",
+    duration: "0:38",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/B0Y4p3V7nZs",
+    thumbnailUrl: "https://img.youtube.com/vi/B0Y4p3V7nZs/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=B0Y4p3V7nZs"
+  },
+  {
+    title: "Allah Loves Those Who Repent",
+    speaker: "Mufti Menk",
+    videoId: "J8F7k3mW9oA",
+    duration: "0:41",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/J8F7k3mW9oA",
+    thumbnailUrl: "https://img.youtube.com/vi/J8F7k3mW9oA/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=J8F7k3mW9oA"
+  },
+  {
+    title: "Trust Allah Completely",
+    speaker: "Omar Suleiman",
+    videoId: "P5k8Q2oL7As",
+    duration: "0:34",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/P5k8Q2oL7As",
+    thumbnailUrl: "https://img.youtube.com/vi/P5k8Q2oL7As/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=P5k8Q2oL7As"
+  },
+  {
+    title: "Allah Knows What You Feel",
+    speaker: "Mufti Menk",
+    videoId: "T9L5F1pR6oY",
+    duration: "0:33",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/T9L5F1pR6oY",
+    thumbnailUrl: "https://img.youtube.com/vi/T9L5F1pR6oY/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=T9L5F1pR6oY"
+  },
+  {
+    title: "Never Lose Hope in Allah",
+    speaker: "Nouman Ali Khan",
+    videoId: "X2M6f1c8R9Q",
+    duration: "0:39",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/X2M6f1c8R9Q",
+    thumbnailUrl: "https://img.youtube.com/vi/X2M6f1c8R9Q/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=X2M6f1c8R9Q"
+  },
+  {
+    title: "Every Test Has Wisdom",
+    speaker: "Omar Suleiman",
+    videoId: "D3J5w9Z2oQs",
+    duration: "0:37",
+    category: "HalalTok",
+    embedUrl: "https://www.youtube.com/embed/D3J5w9Z2oQs",
+    thumbnailUrl: "https://img.youtube.com/vi/D3J5w9Z2oQs/hqdefault.jpg",
+    youtubeUrl: "https://www.youtube.com/watch?v=D3J5w9Z2oQs"
+  }
+];

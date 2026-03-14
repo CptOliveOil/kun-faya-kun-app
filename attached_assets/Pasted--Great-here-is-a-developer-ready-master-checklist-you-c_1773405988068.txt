@@ -1,0 +1,519 @@
+
+Great — here is a developer-ready master checklist you can follow when building the next version of your app. I structured it like a product roadmap so it’s easier to implement step-by-step.
+
+⸻
+
+PHASE 1 — Critical Fixes (Do First)
+
+These are things that are currently broken or incorrect.
+
+1. Fix YouTube video playback
+
+Problem: Videos show “unavailable”.
+
+Solution
+
+Convert all links into YouTube embed format.
+
+Store:
+
+videoId
+title
+speaker
+duration
+
+Generate:
+
+Embed URL
+
+https://www.youtube.com/embed/VIDEO_ID
+
+Thumbnail
+
+https://img.youtube.com/vi/VIDEO_ID/hqdefault.jpg
+
+Example data structure
+
+{
+ title: "The Power of Bismillah",
+ speaker: "Mufti Menk",
+ videoId: "abc123xyz"
+}
+
+Player
+
+<iframe
+ src="https://www.youtube.com/embed/VIDEO_ID"
+ allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+ allowfullscreen>
+</iframe>
+
+Add fallback:
+
+If embed fails → show button
+Open in YouTube
+
+⸻
+
+2. Fix video thumbnails
+
+Current thumbnails are placeholders.
+
+Solution
+
+Use YouTube thumbnail endpoint
+
+https://img.youtube.com/vi/VIDEO_ID/hqdefault.jpg
+
+Add fallback image:
+
+onError -> show placeholder thumbnail
+
+
+⸻
+
+3. Fix Prayer Arc Animation
+
+Current animation looks visually off.
+
+Problems
+
+• Prayer markers not aligned properly
+• Sun position not accurate
+• Motion slightly awkward
+
+Fix
+
+Calculate sun position using current time between sunrise and sunset.
+
+Formula concept:
+
+progress = (currentTime - sunrise) / (sunset - sunrise)
+
+Position the sun along the arc using that value.
+
+Also:
+
+• Highlight current prayer
+• Fade past prayers
+• Emphasize next prayer
+
+⸻
+
+4. Fix prayer notification bell icon
+
+Bell icon doesn’t fit container.
+
+Fix
+
+Standardize icon button size.
+
+Use:
+
+button size: 44px x 44px
+icon size: 20px
+padding: 12px
+
+Center icon vertically and horizontally.
+
+⸻
+
+PHASE 2 — Islamic Identity Improvements
+
+5. Add Arabic greeting
+
+Current greeting only English.
+
+Replace
+
+As-salamu alaykum
+
+with
+
+السلام عليكم
+As-salamu alaykum
+
+Arabic above English.
+
+⸻
+
+6. Add Arabic names to Islamic terms
+
+Show Arabic alongside English.
+
+Example mapping:
+
+Fajr — الفجر
+Dhuhr — الظهر
+Asr — العصر
+Maghrib — المغرب
+Isha — العشاء
+
+Dhikr — ذكر
+Dua — دعاء
+Quran — القرآن
+Qibla — القبلة
+Hadith — حديث
+
+Display format:
+
+Fajr
+الفجر
+
+
+⸻
+
+PHASE 3 — Prayer Stats Upgrade
+
+7. Replace prayer stats with timeline chart
+
+Current stats are basic.
+
+Replace with visual timeline.
+
+Example weekly chart
+
+Mon  ●●●●●
+Tue  ●●●●○
+Wed  ●●●○○
+Thu  ●●●●●
+Fri  ●●●●○
+Sat  ●●●●●
+Sun  ●●●●●
+
+Legend
+
+Green = prayed
+Yellow = late
+Red = missed
+Gray = not logged
+
+Also show:
+
+Weekly completion
+Prayer streak
+Best streak
+
+
+⸻
+
+PHASE 4 — Home Screen Improvements
+
+8. Reorder home screen priority
+
+Current layout slightly crowded.
+
+New structure
+
+Greeting
+
+Next Prayer
+
+Quick Actions
+
+Daily Dhikr
+
+HalalTok Reminder
+
+Quick Duas
+
+Videos / Library
+
+
+⸻
+
+9. Add daily reminder card
+
+Example:
+
+Today's Reminder
+
+"Actions are judged by intentions"
+
+Swipe → learn more
+
+
+⸻
+
+10. Add Continue section
+
+Continue Dhikr
+Resume Story
+Continue Video
+
+Improves retention.
+
+⸻
+
+PHASE 5 — Dhikr Experience Improvements
+
+11. Improve counter interaction
+
+Add:
+
+• Haptic feedback
+• subtle sound
+• glow animation
+• progress ring
+
+Completion animation when reaching 33.
+
+⸻
+
+12. Improve dhikr learning tabs
+
+Tabs currently:
+
+Meaning
+Virtue
+Reward
+
+Improve with clearer active state.
+
+Optional additions:
+
+• transliteration
+• audio playback
+• repeat mode
+
+⸻
+
+PHASE 6 — HalalTok Feature Upgrade
+
+This is your most powerful feature.
+
+13. Convert HalalTok to full-screen swipe feed
+
+Structure:
+
+Hadith title
+
+Arabic text
+
+Short translation
+
+1 line insight
+
+Swipe for next
+
+
+⸻
+
+14. Add engagement controls
+
+Add icons:
+
+❤️ Save
+🔖 Bookmark
+📤 Share
+
+Also show progress
+
+1 / 30
+
+
+⸻
+
+PHASE 7 — Video Section Improvements
+
+15. Improve video cards
+
+Add:
+
+• real thumbnail
+• duration badge
+• speaker name
+• watched progress bar
+
+Example card:
+
+[Thumbnail]
+
+The Power of Bismillah
+Mufti Menk
+
+8:42
+
+
+⸻
+
+16. Add video categories
+
+Examples:
+
+Daily reminders
+Hadith explanation
+Prophet stories
+Short reflections
+
+⸻
+
+PHASE 8 — Duas & Library Improvements
+
+17. Add “Today’s Dua”
+
+Example:
+
+Today's Dua
+
+اللهم بك أصبحنا
+
+Tap to read
+
+
+⸻
+
+18. Add audio playback for duas
+
+Options:
+
+• Arabic only
+• Arabic + translation
+• repeat
+
+⸻
+
+19. Add favourites system
+
+Users can save:
+
+• duas
+• dhikr
+• videos
+• reminders
+
+⸻
+
+PHASE 9 — Engagement Systems
+
+20. Add streak system
+
+Track:
+
+Prayer streak
+Dhikr streak
+Learning streak
+
+Example:
+
+🔥 7 Day Streak
+
+
+⸻
+
+21. Add completion feedback
+
+Examples:
+
+Dhuhr Logged
++1 Streak
+
+Dhikr Completed
+Well done
+
+Add small animation.
+
+⸻
+
+PHASE 10 — UX Polishing
+
+22. Improve contrast
+
+Some text too light.
+
+Increase contrast for:
+
+• grey text
+• inactive icons
+• borders
+
+⸻
+
+23. Improve active states
+
+Make it clearer which tab is active.
+
+Use:
+
+• stronger color
+• filled icon
+• subtle background highlight
+
+⸻
+
+24. Tighten spacing in grids
+
+Some cards have excess vertical padding.
+
+Use space for:
+
+• subtitle
+• progress
+• CTA
+
+⸻
+
+PHASE 11 — Accessibility
+
+25. Improve accessibility
+
+Add options:
+
+• text size adjustment
+• dyslexia spacing
+• high contrast
+• Arabic font scaling
+
+⸻
+
+PHASE 12 — Growth Features
+
+26. Add notifications
+
+Examples:
+
+Morning adhkar reminder
+Next prayer reminder
+Continue your streak
+Daily reminder
+
+⸻
+
+27. Add account sync
+
+Benefits:
+
+• save progress
+• restore data
+• sync streaks
+
+⸻
+
+28. Add analytics tracking
+
+Track:
+
+Home taps
+Prayer logs
+Dhikr completions
+HalalTok swipes
+Video starts
+Video completions
+
+⸻
+
+PHASE 13 — Advanced Features
+
+29. Add dark mode
+
+Essential for nighttime use.
+
+⸻
+
+30. Add offline mode
+
+Download:
+
+• duas
+• dhikr
+• stories
